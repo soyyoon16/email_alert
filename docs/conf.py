@@ -13,9 +13,7 @@
 import os
 import sys
 
-sys.path.insert(
-    0, os.path.abspath(r"C:\Users\soyyo\MLAD\Projects\email_alert\email_alert_module")
-)
+sys.path.insert(0, os.path.abspath("../email_alert_module"))
 
 
 # -- Project information -----------------------------------------------------
@@ -66,4 +64,4 @@ html_static_path = ["_static"]
 
 # Configuration for sphinx-autoapi
 autoapi_type = "python"  # Type of the code base
-autoapi_dirs = [r"C:\Users\soyyo\MLAD\Projects\email_alert\email_alert_module"]
+autoapi_dirs = ["../email_alert_module"]
