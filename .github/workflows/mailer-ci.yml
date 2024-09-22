@@ -24,5 +24,8 @@ jobs:
     - name: Run pre-commit checks
       run: poetry run pre-commit run --all-files
 
+    - name: List directories for debugging
+      run: ls -R   # This lists all directories recursively
+
     - name: Build documentation
       run: poetry run sphinx-build -b html docs/ docs/_build
