@@ -3,6 +3,15 @@ from mailer import send_email
 
 
 def setup_args(parser):
+    """
+    Adds command-line arguments for the email alert system to the provided argument parser.
+
+    Args:
+        parser (argparse.ArgumentParser): The argument parser object to which the command-line arguments will be added.
+
+    Returns:
+        argparse.ArgumentParser: The updated argument parser with the added arguments for sender, recipient, subject, and body.
+    """
     parser.add_argument("-s", "--sender", type=str, required=True)
     parser.add_argument("-r", "--recipient", type=str, required=True)
     parser.add_argument("-j", "--subject", type=str, default="Subject")
@@ -11,6 +20,9 @@ def setup_args(parser):
 
 
 def main():
+    """
+    Parse command-line arguments and send an email using the provided details.
+    """
     parser = ArgumentParser()
     args = setup_args(parser).parse_args()
 

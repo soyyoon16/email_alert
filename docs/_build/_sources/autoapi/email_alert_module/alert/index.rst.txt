@@ -1,0 +1,34 @@
+email_alert_module.alert
+========================
+
+.. py:module:: email_alert_module.alert
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   email_alert_module.alert.setup_args
+   email_alert_module.alert.main
+
+
+Module Contents
+---------------
+
+.. py:function:: setup_args(parser)
+
+   Adds command-line arguments for the email alert system to the provided argument parser.
+
+   :param parser: The argument parser object to which the command-line arguments will be added.
+   :type parser: argparse.ArgumentParser
+
+   :returns: The updated argument parser with the added arguments for sender, recipient, subject, and body.
+   :rtype: argparse.ArgumentParser
+
+
+.. py:function:: main()
+
+   Parse command-line arguments and send an email using the provided details.
+
+

@@ -1,0 +1,31 @@
+email_alert_module.mailer
+=========================
+
+.. py:module:: email_alert_module.mailer
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   email_alert_module.mailer.send_email
+
+
+Module Contents
+---------------
+
+.. py:function:: send_email(sender, recipient, subject, body)
+
+   Sends an email message with the given details.
+
+   :param sender: The email address of the sender.
+   :type sender: str
+   :param recipient: The email address of the recipient.
+   :type recipient: str
+   :param subject: The subject line of the email.
+   :type subject: str
+   :param body: The body content of the email. If None, no body will be included in the email.
+   :type body: str
+
+
