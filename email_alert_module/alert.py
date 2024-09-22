@@ -9,6 +9,7 @@ def setup_args(parser):
     parser.add_argument("-b", "--body", type=str, default="Body")
     return parser
 
+
 def main():
     parser = ArgumentParser()
     args = setup_args(parser).parse_args()
@@ -17,8 +18,9 @@ def main():
         sender=args.sender,
         recipient=args.recipient,
         subject=args.subject,
-        body=args.body
+        body=args.body,
     )
+
 
 if __name__ == "__main__":
     main()
